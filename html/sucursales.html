@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- relacionar con el archivo descargado de favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../imagenes/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../imagenes/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../imagenes/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- relacionar con css bootstrap 
+  https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse 
+  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- relacionar el archivo html con el archivo css -->
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- registrarse en fontawesome y te envia la siguiente linea para los iconos-->
+  <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+  <title>La cocina de San</title>
+</head>
+
+<body>
+  <header>
+    <h1>La cocina de San</h1>
+    <!-- INICIO BARRA DE NAVEGACIÓN CON CSS BOOTSTRAP 
+https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse 
+-->
+    <nav class="navbar navbar-inverse" >
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="acercade.html">Acerca de mi</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="regristrese.html">Regístrese</a></li>
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <li><a href="nuestrosclientes.html">Nuestros clientes</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Iniciar Sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- FIN BARRA DE NAVEGACIÓN CON CSS BOOTSTRAP -->
+  </header>
+ 
+
+  <menu class="sucursales">
+    <h2>Sucursales</h2>
+    <p>Villa Devoto:
+      <a href="https://www.google.com/maps/place/Av.+Francisco+Beir%C3%B3+4800,+C1419HZW+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.610684,-58.518334,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb7d0c18122cf:0x16e318de5f9e91fa!8m2!3d-34.610684!4d-58.518334!16s%2Fg%2F11c5q8zs0r?entry=ttu"
+        target="_blank">Av. Beiro 4800.</a>
+    <p>Urquiza:
+      <a href="https://www.google.com/maps/place/Av+Triunvirato+3000,+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.5847855,-58.4647392,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb60a440ef8fb:0x4e34d3fd9e77ca4b!8m2!3d-34.5847855!4d-58.4647392!16s%2Fg%2F11bw44cxrw?entry=ttu"
+        target="_blank">Av Triunvirato 3000.</a>
+    </p>
+    <p>Belgrano:
+      <a href="https://www.google.com/maps/place/Av.+Cabildo+3200,+C1429AAP+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.5528754,-58.4653203,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb682dda080b7:0x5467664e274a1d00!8m2!3d-34.5528754!4d-58.4653203!16s%2Fg%2F11c241t5nt?entry=ttu"
+        target="_blank">Av. Cabildo 3200.</a>
+    </p>
+    <p>Recoleta:
+      <a href="https://www.google.com/maps/place/Av.+Callao+200,+C1022AAP+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.6066583,-58.3923038,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccac237b5aeb1:0xd9af9d9a98aa7c23!8m2!3d-34.6066583!4d-58.3923038!16s%2Fg%2F11c88whn9m?entry=ttu"
+        target="_blank">Av. Callao 200.</a>
+    </p>
+
+    <div class="iframe-mapas">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7420388131986!2d-58.518334!3d-34.610684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d0c18122cf%3A0x16e318de5f9e91fa!2sAv.%20Francisco%20Beir%C3%B3%204800%2C%20C1419HZW%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714347624340!5m2!1ses-419!2sar"
+      width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.766060255829!2d-58.4647392!3d-34.5847855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb60a440ef8fb%3A0x4e34d3fd9e77ca4b!2sAv%20Triunvirato%203000%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714347737887!5m2!1ses-419!2sar"
+      width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.0268562324936!2d-58.4653203!3d-34.5528754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb682dda080b7%3A0x5467664e274a1d00!2sAv.%20Cabildo%203200%2C%20C1429AAP%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714347855258!5m2!1ses-419!2sar"
+      width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9012582200444!2d-58.3923038!3d-34.6066583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac237b5aeb1%3A0xd9af9d9a98aa7c23!2sAv.%20Callao%20200%2C%20C1022AAP%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714347878247!5m2!1ses-419!2sar"
+      width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </menu>
+  <footer>
+    <!-- iconos y hipervinculos -->
+    <a class="redsoc" href="https://www.twitter.com" target="_blank"> <i class="fa fa-twitter"
+        aria-hidden="true"></i></a>
+    <a class="redsoc" href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook"
+        aria-hidden="true"></i></a>
+    <a class="redsoc" href="https://www.pinterest" target="_blank"> <i class="fa fa-pinterest"
+        aria-hidden="true"></i></a>
+    <a class="redsoc" href="https://www.instagram.com" target="_blank"> <i class="fa fa-instagram"
+        aria-hidden="true"></i></a>
+    <a class="redsoc" href="https://www.linkedin.com" target="_blank"> <i class="fa fa-linkedin"
+        aria-hidden="true"></i></a>
+     
+    <P>Derechos de autor sandra.lopez.codigo@gmail.com</P>
+ 
+  </footer>
+</body>
+
+</html>

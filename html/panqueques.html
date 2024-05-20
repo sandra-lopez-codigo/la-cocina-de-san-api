@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- relacionar con el archivo descargado de favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./imagenes/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./imagenes/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- relacionar con css bootstrap 
+  https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse 
+  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- relacionar el archivo html con el archivo css -->
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- registrarse en fontawesome y te envia la siguiente linea para los iconos-->
+  <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+  <title>Que chulada!</title>
+</head>
+
+<body>
+  <header>
+    <h1>La cocina de San</h1>
+    <!-- INICIO BARRA DE NAVEGACIÓN CON CSS BOOTSTRAP 
+https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse 
+-->
+    <nav class="navbar navbar-inverse" >
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="acercade.html">Acerca de mi</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
+                  <li><a href="regristrese.html">Regístrese</a></li>
+                  <li><a href="sucursales.html">Sucursales</a></li>
+                  <li><a href="nuestrosclientes.html">Nuestros clientes</a></li>
+                </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Iniciar Sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- FIN BARRA DE NAVEGACIÓN CON CSS BOOTSTRAP -->
+  </header>
+      <menu>
+            <!-- INICIO DE GRID BASIC CSS BOOTSTRAP
+que es colocar clases a las columnas existentes
+para que ocupen ciertos tamaños según el dispostivo -->
+            <div class="row">
+                  <!-- columna 1 
+                  class="col-(tamañoDelDispositivo)-(númeroColumnasQueOcupará) col-(tamañoDelDispositivo)-(númeroColumnasQueOcupará)"
+                  -->
+                  <div class="col-md-3 col-sm-3">
+                        <p>
+                              Se denomina panqueque a una torta de escaso grosor que elabora con una masa de harina,
+                              leche y huevos
+                              batidos. También llamados panquecas o tortitas, los panqueques pueden ser dulces o
+                              salados. Se trata de
+                              productos similares a los creps: el uso de ambas nociones, de hecho, es indistinto en
+                              algunas regiones.
+                        </p>
+                  </div>
+                  <!-- columna 2 -->
+                  <div class="col-md-6 col-sm-9">
+                        <h2>Panqueques con dulce de leche</h2>
+                        <img src="../imagenes/panqueques .jpg" alt="panqueque con dulce de leche">
+                  </div>
+
+                  <!-- columna 3 -->
+                  <div class="col-md-3 col-sm-12">
+                        <h3>Ingredientes</h3>
+                        <table>
+                              <tr>
+                                    <th>Cantidad</th> <!-- Titulo de columna 1 -->
+                                    <th>Producto</th> <!-- Titulo de columna 1 -->
+                              </tr>
+                              <tr>
+                                    <td>2</td>
+                                    <td>huevos</td>
+                              </tr>
+                              <tr>
+                                    <td>250cc</td>
+                                    <td>Leche</td>
+                              </tr>
+                              <tr>
+                                    <td>100g</td>
+                                    <td>Harina</td>
+                              </tr>
+                              <tr>
+                                    <td>1 pizca</td>
+                                    <td>Sal</td>
+                              </tr>
+                              <tr>
+                                    <td>1/2 cucharada</td>
+                                    <td>Manteca</td>
+                              </tr>
+                              <tr>
+                                    <td>A gusto</td>
+                                    <td>Dulce de leche colonial o repostero</td>
+                              </tr>
+                              <tr>
+                                    <td>A gusto</td>
+                                    <td>Frutos rojos</td>
+                              </tr>
+                        </table>
+                       
+                        <h3>A tener en cuenta</h3>
+                        <ul><!-- lista desordenada -->
+                              <li>Para rellenar puedes elegir entre varias opciones, pero se recomienda
+                                    dulce de leche colonial o repostero.
+                              </li>
+                              <li> Una vez rellenos, espolvorearlos con azúcar impalpable y levar a horno precalentado
+                                    a temperatura alta (220°C) por un minuto hasta que estén doraditos.
+                              </li>
+                        </ul>
+                  </div>
+
+            </div> <!-- fin de class="row" -->
+            <!-- FIN DE GRID BASIC CSS BOOTSTRAP -->
+      </menu>
+
+      <footer>
+            <!-- iconos y hipervinculos -->
+            <a class="redsoc" href="https://www.twitter.com" target="_blank"> <i class="fa fa-twitter"
+                        aria-hidden="true"></i></a>
+            <a class="redsoc" href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook"
+                        aria-hidden="true"></i></a>
+            <a class="redsoc" href="https://www.pinterest" target="_blank"> <i class="fa fa-pinterest"
+                        aria-hidden="true"></i></a>
+            <a class="redsoc" href="https://www.instagram.com" target="_blank"> <i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+            <a class="redsoc" href="https://www.linkedin.com" target="_blank"> <i class="fa fa-linkedin"
+                        aria-hidden="true"></i></a>
+            
+            <P>Derechos de autor sandra.lopez.codigo@gmail.com</P>
+        
+      </footer>
+</body>
+
+</html>
